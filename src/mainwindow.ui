@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>SunnyTerminal-alpha</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="Title" name="title" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Terminal" name="terminal" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QFrame" name="debugFrame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="focusPolicy">
+            <enum>Qt::ClickFocus</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="focusPolicy">
+            <enum>Qt::ClickFocus</enum>
+           </property>
+           <property name="text">
+            <string>Commit</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="textEdit">
+         <property name="minimumSize">
+          <size>
+           <width>400</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="textEdit_2">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionResize"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuCommand">
+    <property name="title">
+     <string>Test</string>
+    </property>
+    <addaction name="actionTest0"/>
+    <addaction name="actionTest1"/>
+    <addaction name="actionTest2"/>
+    <addaction name="actionTest3"/>
+    <addaction name="actionTest4"/>
+    <addaction name="actionTest5"/>
+    <addaction name="actionTest6"/>
+    <addaction name="actionTest7"/>
+    <addaction name="actionTest8"/>
+    <addaction name="actionTest9"/>
+    <addaction name="separator"/>
+    <addaction name="actionAltEnable"/>
+    <addaction name="actionAltDisable"/>
+    <addaction name="actionCapEnable"/>
+    <addaction name="actionCapDisable"/>
+    <addaction name="separator"/>
+    <addaction name="actionRepeatTest"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuCommand"/>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionTest0">
+   <property name="text">
+    <string>Test0</string>
+   </property>
+  </action>
+  <action name="actionTest1">
+   <property name="text">
+    <string>Test1</string>
+   </property>
+  </action>
+  <action name="actionTest2">
+   <property name="text">
+    <string>Test2</string>
+   </property>
+  </action>
+  <action name="actionAltEnable">
+   <property name="text">
+    <string>AltEnable</string>
+   </property>
+  </action>
+  <action name="actionAltDisable">
+   <property name="text">
+    <string>AltDisable</string>
+   </property>
+  </action>
+  <action name="actionTest3">
+   <property name="text">
+    <string>Test3</string>
+   </property>
+  </action>
+  <action name="actionTest4">
+   <property name="text">
+    <string>Test4</string>
+   </property>
+  </action>
+  <action name="actionTest5">
+   <property name="text">
+    <string>Test5</string>
+   </property>
+  </action>
+  <action name="actionTest6">
+   <property name="text">
+    <string>Test6</string>
+   </property>
+  </action>
+  <action name="actionTest7">
+   <property name="text">
+    <string>Test7</string>
+   </property>
+  </action>
+  <action name="actionTest8">
+   <property name="text">
+    <string>Test8</string>
+   </property>
+  </action>
+  <action name="actionTest9">
+   <property name="text">
+    <string>Test9</string>
+   </property>
+  </action>
+  <action name="actionCapEnable">
+   <property name="text">
+    <string>CapEnable</string>
+   </property>
+  </action>
+  <action name="actionCapDisable">
+   <property name="text">
+    <string>CapDisable</string>
+   </property>
+  </action>
+  <action name="actionRepeatTest">
+   <property name="text">
+    <string>RepeatTest</string>
+   </property>
+  </action>
+  <action name="actionResize">
+   <property name="text">
+    <string>Resize</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Terminal</class>
+   <extends>QWidget</extends>
+   <header>terminal.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Title</class>
+   <extends>QWidget</extends>
+   <header>title.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pushButton</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>632</x>
+     <y>591</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>760</x>
+     <y>586</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
